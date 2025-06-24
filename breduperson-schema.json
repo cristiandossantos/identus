@@ -1,54 +1,37 @@
 {
-    "guid": "9e2060bd-6d93-3134-8275-c4dc1276d46e",
-    "id": "0b87ebff-b9b1-41f5-b61e-9530a7c5adad",
-    "longId": "did:prism:0ab16b5f7c39068ea73ed4a82f976a10233c73edf5bf48364cf47c29f5e51287/0b87ebff-b9b1-41f5-b61e-9530a7c5adad?version=1.0.0",
-    "name": "driving-license",
-    "version": "1.0.0",
-    "tags": [
-        "driving",
-        "license"
-    ],
-    "description": "Driving License Schema",
-    "type": "https://w3c-ccg.github.io/vc-json-schemas/schema/2.0/schema.json",
-    "schema": {
-        "$id": "https://example.com/driving-license-1.0.0",
-        "$schema": "https://json-schema.org/draft/2020-12/schema",
-        "description": "Driving License",
-        "type": "object",
-        "properties": {
-            "emailAddress": {
-                "type": "string",
-                "format": "email"
-            },
-            "givenName": {
-                "type": "string"
-            },
-            "familyName": {
-                "type": "string"
-            },
-            "dateOfIssuance": {
-                "type": "string",
-                "format": "date-time"
-            },
-            "drivingLicenseID": {
-                "type": "string"
-            },
-            "drivingClass": {
-                "type": "integer"
-            }
-        },
-        "required": [
-            "emailAddress",
-            "familyName",
-            "dateOfIssuance",
-            "drivingLicenseID",
-            "drivingClass"
-        ],
-        "additionalProperties": true
+  "$id": "https://seuusuario.github.io/schemas/driving-license-1.0.0.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Driving License Schema",
+  "description": "Driving License Credential Schema",
+  "type": "object",
+  "properties": {
+    "emailAddress": {
+      "type": "string",
+      "format": "email"
     },
-    "author": "did:prism:0ab16b5f7c39068ea73ed4a82f976a10233c73edf5bf48364cf47c29f5e51287",
-    "authored": "2025-06-24T03:35:35.53702Z",
-    "resolutionMethod": "http",
-    "kind": "CredentialSchema",
-    "self": "/schema-registry/schemas/9e2060bd-6d93-3134-8275-c4dc1276d46e"
+    "givenName": {
+      "type": "string"
+    },
+    "familyName": {
+      "type": "string"
+    },
+    "dateOfIssuance": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "drivingLicenseID": {
+      "type": "string"
+    },
+    "drivingClass": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "emailAddress",
+    "familyName",
+    "dateOfIssuance",
+    "drivingLicenseID",
+    "drivingClass"
+  ],
+  "additionalProperties": true
 }
