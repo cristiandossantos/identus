@@ -6,7 +6,7 @@
   "type": "object",
   "properties": {
     "nome": {
-      "type": "string",
+      "type": "string"
     },
     "cpf": {
       "type": "string"
@@ -14,13 +14,12 @@
     "dataNascimento": {
       "type": "string"
     },
-    "universidadeuniversidade": {
-      "type": "string",
-      "format": "date-time"
+    "universidade": {
+      "type": "string"
     },
     "email": {
       "type": "string"
-    },
+    }
   },
   "required": [
     "nome",
