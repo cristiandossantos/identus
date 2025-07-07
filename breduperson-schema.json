@@ -5,33 +5,29 @@
   "description": "Driving License Credential Schema",
   "type": "object",
   "properties": {
-    "emailAddress": {
+    "nome": {
       "type": "string",
-      "format": "email"
     },
-    "givenName": {
+    "cpf": {
       "type": "string"
     },
-    "familyName": {
+    "dataNascimento": {
       "type": "string"
     },
-    "dateOfIssuance": {
+    "universidadeuniversidade": {
       "type": "string",
       "format": "date-time"
     },
-    "drivingLicenseID": {
+    "email": {
       "type": "string"
     },
-    "drivingClass": {
-      "type": "integer"
-    }
   },
   "required": [
-    "emailAddress",
-    "familyName",
-    "dateOfIssuance",
-    "drivingLicenseID",
-    "drivingClass"
+    "nome",
+    "cpf",
+    "dataNascimento",
+    "universidade",
+    "email"
   ],
   "additionalProperties": true
 }
