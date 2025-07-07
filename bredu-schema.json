@@ -1,0 +1,35 @@
+{
+  "$id": "https://raw.githubusercontent.com/cristiandossantos/identus/refs/heads/main/breduperson-schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "brEduPerson Schema",
+  "description": "Schema para credencial do brEduPerson com dados básicos do estudante brasileiro",
+  "type": "object",
+  "properties": {
+    "nome": {
+      "type": "string"
+    },
+    "cpf": {
+      "type": "string",
+      "pattern": "^[0-9]{11}$"
+    },
+    "dataNascimento": {
+      "type": "string",
+      "format": "date"
+    },
+    "universidade": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string",
+      "format": "email"
+    }
+  },
+  "required": [
+    "nome",
+    "cpf",
+    "dataNascimento",
+    "universidade",
+    "email"
+  ],
+  "additionalProperties": true
+}
