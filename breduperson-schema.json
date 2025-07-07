@@ -1,8 +1,8 @@
 {
-  "$id": "https://seuusuario.github.io/schemas/driving-license-1.0.0.json",
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Driving License Schema",
-  "description": "Driving License Credential Schema",
+  "$id": "https://github.com/cristiandossantos/identus/edit/main/breduperson-schema.json",
+  "$schema": "https://w3c-ccg.github.io/vc-json-schemas/schema/2.0/schema.json",
+  "title": "bregonline-identity",
+  "description": "Credencial Verificável com dados de identidade no padrão BREDUPerson",
   "type": "object",
   "properties": {
     "nome": {
