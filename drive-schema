@@ -1,0 +1,44 @@
+{
+  "$id": "https://example.com/schemas/driving-license.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Driving License Schema",
+  "description": "Schema for a driving license credential.",
+  "type": "object",
+  "properties": {
+    "emailAddress": {
+      "type": "string",
+      "format": "email",
+      "description": "The email address of the holder."
+    },
+    "givenName": {
+      "type": "string",
+      "description": "The given name of the holder."
+    },
+    "familyName": {
+      "type": "string",
+      "description": "The family name of the holder."
+    },
+    "dateOfIssuance": {
+      "type": "string",
+      "format": "date-time",
+      "description": "The date and time the credential was issued."
+    },
+    "drivingLicenseID": {
+      "type": "string",
+      "description": "The unique identifier for the driving license."
+    },
+    "drivingClass": {
+      "type": "integer",
+      "description": "The class of the driving license."
+    }
+  },
+  "required": [
+    "emailAddress",
+    "givenName",
+    "familyName",
+    "dateOfIssuance",
+    "drivingLicenseID",
+    "drivingClass"
+  ],
+  "additionalProperties": false
+}
