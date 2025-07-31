@@ -1,0 +1,58 @@
+{
+  "$id": "https://raw.githubusercontent.com/cristiandossantos/identus/refs/heads/main/breduperson-schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "brEduPerson Schema",
+  "description": "Schema para credencial do brEduPerson com dados básicos do estudante brasileiro",
+  "type": "object",
+  "properties": {
+    "givenName": {
+      "type": "string",
+      "description": "O primeiro nome da pessoa"
+    },
+    "familyName": {
+      "type": "string",
+      "description": "O sobrenome da pessoa"
+    },
+    "emailAddress": {
+      "type": "string",
+      "format": "email",
+      "description": "O endereço de e-mail da pessoa"
+    },
+    "brPersonCPF": {
+      "type": "string",
+      "description": "O Cadastro de Pessoa Física (CPF) da pessoa"
+    },
+    "brPersonPassport": {
+      "type": "string",
+      "description": "O número do passaporte da pessoa (opcional)"
+    },
+    "brEduAffiliation": {
+      "type": "string",
+      "description": "Identificador único do vínculo com a instituição"
+    },
+    "brEduAffiliationType": {
+      "type": "string",
+      "description": "Tipo de vínculo com a instituição (ex: student, staff, faculty)"
+    },
+    "brEntranceDate": {
+      "type": "string",
+      "description": "Data de início do vínculo com a instituição, no formato YYYYMMDD.",
+      "pattern": "^[0-9]{8}$"
+    },
+    "brExitDate": {
+      "type": "string",
+      "description": "Data de fim do vínculo com a instituição, no formato YYYYMMDD (opcional).",
+      "pattern": "^[0-9]{8}$"
+    }
+  },
+  "required": [
+    "givenName",
+    "familyName",
+    "emailAddress",
+    "brPersonCPF",
+    "brEduAffiliation",
+    "brEduAffiliationType",
+    "brEntranceDate"
+  ],
+  "additionalProperties": true
+}
